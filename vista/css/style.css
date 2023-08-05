@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 11, 2020, 8:47:19 PM
+    Author     : Dairon
+*/
+html {
+  font-size: 15px; }
+
+#paginaJuego {
+  background-color: #cccccc; }
+
+@font-face {
+  font-family: "Mi_fuente";
+  src: url("../fonts/fontawesome-webfont.woff");
+  src: url("../fonts/fontawesome-webfont.svg"); }
+#menu {
+  border: 1px black solid;
+  text-align: center;
+  background-color: #cccccc; }
+
+#menu nav ul {
+  list-style: none; }
+
+#seccion_m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#menu nav ul {
+  list-style: none; }
+
+#encabezado {
+  border-bottom: 1px solid; }
+
+#menu {
+  margin-top: 295px; }
+
+#body_menu {
+  background: url("../image/Asset 6.png") no-repeat center top; }
+
+#menu_opciones_juego {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.modal-content {
+  background-color: #cccccc; }
+
+/*# sourceMappingURL=style.css.map */

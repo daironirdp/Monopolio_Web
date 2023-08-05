@@ -1,0 +1,474 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 1, 2020, 10:53:07 AM
+    Author     : Dairon
+*/
+#paginaJuego {
+  background-color: #cccccc; }
+
+#barra_juego {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none; }
+
+#botonTirar a {
+  list-style: none;
+  text-align: center; }
+
+#tablero {
+  background: url("../image/tablero.png") no-repeat left top;
+  height: 600px;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+#informacion {
+  border: 1px solid; }
+
+#box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  background-color: #cccccc; }
+
+#caja_botonTirar {
+  margin-top: 230px; }
+
+.desactivo {
+  display: none; }
+
+#personaje1, #personaje2, #personaje3, #personaje4, #personaje5, #personaje6 {
+  position: absolute; }
+
+#p1, #p2, #p3, #p4, #p5, #p6 {
+  border-radius: 50%;
+  font-size: 25px; }
+
+.posInicial {
+  right: 60px;
+  bottom: 10px; }
+
+.subasta {
+  display: none; }
+
+.negociar {
+  display: none; }
+
+.ventana_negociar {
+  display: none; }
+
+.ocultar {
+  display: none; }
+
+.botonPujar {
+  display: none; }
+
+#carmelita1 {
+  position: absolute;
+  bottom: 64px;
+  left: 810px;
+  color: green; }
+
+#hotelcarmelita1 {
+  position: absolute;
+  font-size: 30px;
+  left: 830px;
+  bottom: 60px;
+  color: red; }
+
+#carmelita2 {
+  position: absolute;
+  bottom: 64px;
+  left: 650px;
+  color: green; }
+
+#hotelcarmelita2 {
+  position: absolute;
+  font-size: 30px;
+  left: 670px;
+  bottom: 60px;
+  color: red; }
+
+#azulclaro1 {
+  position: absolute;
+  bottom: 64px;
+  left: 400px;
+  color: green; }
+
+#hotelazulclaro1 {
+  position: absolute;
+  font-size: 30px;
+  left: 420px;
+  bottom: 60px;
+  color: red; }
+
+#azulclaro2 {
+  position: absolute;
+  bottom: 64px;
+  left: 230px;
+  color: green; }
+
+#hotelazulclaro2 {
+  position: absolute;
+  font-size: 30px;
+  left: 250px;
+  bottom: 60px;
+  color: red; }
+
+#azulclaro3 {
+  position: absolute;
+  bottom: 64px;
+  left: 150px;
+  color: green; }
+
+#hotelazulclaro3 {
+  position: absolute;
+  font-size: 30px;
+  left: 170px;
+  bottom: 60px;
+  color: red; }
+
+#morado1 {
+  position: absolute;
+  bottom: 80px;
+  left: 110px;
+  color: green;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 12px; }
+
+#hotelmorado1 {
+  position: absolute;
+  font-size: 30px;
+  left: 130px;
+  bottom: 70px;
+  color: red;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+#morado2 {
+  position: absolute;
+  bottom: 170px;
+  left: 110px;
+  color: green;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 12px; }
+
+#hotelmorado2 {
+  position: absolute;
+  font-size: 30px;
+  left: 130px;
+  bottom: 170px;
+  color: red;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+#morado3 {
+  position: absolute;
+  bottom: 230px;
+  left: 110px;
+  color: green;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 12px; }
+
+#hotelmorado3 {
+  position: absolute;
+  font-size: 30px;
+  left: 130px;
+  bottom: 210px;
+  color: red;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+#naranja1 {
+  position: absolute;
+  bottom: 320px;
+  left: 110px;
+  color: green;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 12px; }
+
+#hotelnaranja1 {
+  position: absolute;
+  font-size: 30px;
+  left: 130px;
+  bottom: 310px;
+  color: red;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+#naranja2 {
+  position: absolute;
+  bottom: 420px;
+  left: 110px;
+  color: green;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 12px; }
+
+#hotelnaranja2 {
+  position: absolute;
+  font-size: 30px;
+  left: 130px;
+  bottom: 410px;
+  color: red;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+#naranja3 {
+  position: absolute;
+  bottom: 480px;
+  left: 110px;
+  color: green;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 12px; }
+
+#hotelnaranja3 {
+  position: absolute;
+  font-size: 30px;
+  left: 130px;
+  bottom: 450px;
+  color: red;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+#rojo1 {
+  position: absolute;
+  bottom: 485px;
+  left: 150px;
+  color: green;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#hotelrojo1 {
+  position: absolute;
+  font-size: 30px;
+  left: 170px;
+  bottom: 470px;
+  color: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#rojo2 {
+  position: absolute;
+  bottom: 485px;
+  left: 310px;
+  color: green;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#hotelrojo2 {
+  position: absolute;
+  font-size: 30px;
+  left: 330px;
+  bottom: 470px;
+  color: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#rojo3 {
+  position: absolute;
+  bottom: 485px;
+  left: 410px;
+  color: green;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#hotelrojo3 {
+  position: absolute;
+  font-size: 30px;
+  left: 430px;
+  bottom: 470px;
+  color: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#amarillo1 {
+  position: absolute;
+  bottom: 485px;
+  left: 560px;
+  color: green;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#hotelamarillo1 {
+  position: absolute;
+  font-size: 30px;
+  left: 580px;
+  bottom: 470px;
+  color: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#amarillo2 {
+  position: absolute;
+  bottom: 485px;
+  left: 660px;
+  color: green;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#hotelamarillo2 {
+  position: absolute;
+  font-size: 30px;
+  left: 680px;
+  bottom: 470px;
+  color: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#amarillo3 {
+  position: absolute;
+  bottom: 485px;
+  left: 810px;
+  color: green;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#hotelamarillo3 {
+  position: absolute;
+  font-size: 30px;
+  left: 830px;
+  bottom: 470px;
+  color: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+#verde1 {
+  position: absolute;
+  bottom: 475px;
+  left: 870px;
+  color: green;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-size: 12px; }
+
+#hotelverde1 {
+  position: absolute;
+  font-size: 30px;
+  left: 870px;
+  bottom: 450px;
+  color: red;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg); }
+
+#verde2 {
+  position: absolute;
+  bottom: 420px;
+  left: 870px;
+  color: green;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-size: 12px; }
+
+#hotelverde2 {
+  position: absolute;
+  font-size: 30px;
+  left: 870px;
+  bottom: 410px;
+  color: red;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg); }
+
+#verde3 {
+  position: absolute;
+  bottom: 320px;
+  left: 870px;
+  color: green;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-size: 12px; }
+
+#hotelverde3 {
+  position: absolute;
+  font-size: 30px;
+  left: 870px;
+  bottom: 310px;
+  color: red;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg); }
+
+#azul1 {
+  position: absolute;
+  bottom: 175px;
+  left: 870px;
+  color: green;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-size: 12px; }
+
+#hotelazul1 {
+  position: absolute;
+  font-size: 30px;
+  left: 870px;
+  bottom: 160px;
+  color: red;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg); }
+
+#azul2 {
+  position: absolute;
+  bottom: 75px;
+  left: 870px;
+  color: green;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-size: 12px; }
+
+#hotelazul2 {
+  position: absolute;
+  font-size: 30px;
+  left: 870px;
+  bottom: 70px;
+  color: red;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg); }
+
+#desencadenante {
+  opacity: 1 !important;
+  font-size: 1rem !important; }
+
+.valor_puja {
+  width: 25% !important;
+  text-align: center; }
+
+#bloque_jugador1 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 50px; }
+
+#bloque_jugador2 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 50px; }
+
+/*# sourceMappingURL=style_juego.css.map */
